@@ -15,7 +15,7 @@ Sample output:
  ehllo = 1
  hello = 13
  Total execution time in ms: 3
-</code><pre>
+</code></pre>
 </p>
 
 ## Disclaimer
