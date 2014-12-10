@@ -12,9 +12,9 @@ This simple program accepts a word as a command line argument and prints its ran
 </code></pre>
 Sample output:
 <pre> <code>$ java WordRanker ehllo hello
-ehllo = 1
-hello = 13
-Total execution time in ms: 3
+ ehllo = 1
+ hello = 13
+ Total execution time in ms: 3
 </code><pre>
 </p>
 
