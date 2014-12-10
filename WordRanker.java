@@ -7,10 +7,6 @@
    sorted list of all words made up of the same set of letters.
    (e.g. ABC ranked 1, ACB ranked 2, BAC ranked 3, and etc.)
 
-   Compilation Command: javac WordRanker.java
-   Execution Command: java WordRanker WORD
-   It can also take more than one word (separated by space): java WordRanker ONEWORD TWOWORDS
-
    Basic Concept:
    each letter is assigned to a number according to its alphabetical order within the word.
    (e.g. the word: BDAA: B D A A
