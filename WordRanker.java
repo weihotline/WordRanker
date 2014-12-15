@@ -25,7 +25,6 @@ public class WordRanker
 {
 	public static void main (String[] args)
 	{
-        // this line is for calculating the execution time
         final long startTime = System.currentTimeMillis();
 
         for (String word: args) {
@@ -34,16 +33,15 @@ public class WordRanker
 
             BigInteger rank = BigInteger.ONE;
 
-            while (word.length() != 0) {  // stop when the word is completely reduced
+            while (word.length() != 0) {
 
-                String wordClone = word; // make a copy of the word for manipulation
-                char[] charArr = wordClone.toCharArray(); // split the word into characters
-                Arrays.sort(charArr); // sort the list of chars
+                String wordClone = word;
+                char[] charArr = wordClone.toCharArray();
+                Arrays.sort(charArr);
 
                 // make a hashMap for each non-repeated letter within the word
                 HashMap<Character,Integer> charHash = charArrToHashWithRank(charArr);
 
-                // obtain the first letter of the word
                 Character firstCh = new Character(word.charAt(0));
                 Integer n = charHash.get(firstCh);
 
@@ -66,12 +64,10 @@ public class WordRanker
                 word = word.substring(1); // remove the firstCh and repeat the process for the rest of word
             }
 
-            // finally, print to standard output its rank number
             System.out.println(rank);
 
-        }// end of the for-loop for each word from the command line
+        }
 
-        // this line is for calculating the execution time
         final long endTime = System.currentTimeMillis();
         System.out.println("Total execution time in ms: " + (endTime - startTime));
 
